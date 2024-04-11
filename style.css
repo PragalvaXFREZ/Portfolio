@@ -1,0 +1,248 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors: #010101 black
+        #c3b9b7 background
+        #faf4fc white
+        #816f7d pinkish color
+        #47294c purple */
+
+body {
+    background-color: #c3b9b7;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30%;
+    padding-top: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+    top: 0;
+    position: sticky;
+}
+
+.logo {
+    color: #4a2950;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #010101;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #816f7d;
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: #4a2950;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3 {
+    color: #89567d;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #89567d;
+    letter-spacing: 2px;
+    font-size: 30px;
+
+}
+
+.newslatter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newslatter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #4a2950;
+    outline: none;
+    border-radius: 30px;
+    background-color: #c3b9b7;
+    color: #4a2950;
+}
+
+.newslatter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #4a2950;
+    color: #faf4fc;
+    top: 6px;
+    right: 6px;
+}
+
+.skills {
+    padding: 20px 0px;
+}
+
+.title h2 {
+    color: #4a2950;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #47294c;
+    box-shadow: #454545;
+    color: #faf4fc;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.card i {
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    margin: 25px 0px;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+h5 {
+    color: #010101;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.explain1 p {
+    color: #faf4fc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+
+}
+
+.button {
+    background-color: black;
+    color: #faf4fc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+
+}
+
+.button:hover {
+    color: #816f7d;
+    cursor: none;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.container i {
+    font-size: 50px;
+    color: black;
+    margin-right: 1%;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+
+}
+
+.container h4 {
+    color: #4a2950;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#skills {
+    margin-top: 250px;
+}
+
+.photo {
+    float: right;
+    margin-right: 50px;
+    margin-top: 110px;
+
+}
+
+.grad {
+    text-decoration: none;
+
+}
+
+.card i:hover {
+    cursor: pointer;
+    animation: bounce 0.5s ease infinite;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
